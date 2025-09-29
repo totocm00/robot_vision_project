@@ -1,5 +1,5 @@
-from indy_utils.indydcp_client import IndyDCPClient as DCPClient
-from indy_utils.indy_program_maker import JsonProgramComponent
+from common.dcp_client import IndyDCPClient as DCPClient
+from common.program_maker import JsonProgramComponent
 
 
 def new_robot_ip_name(ip):

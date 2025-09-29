@@ -1,5 +1,5 @@
-from indy_utils.indy_program_maker import JsonProgramComponent
-from indy_lib import indy_lib_connect as conn
+from common.program_maker import *
+from common import connect as conn
 
 global indy3_4
 indy3_4 = conn.new_robot_ip_name("192.168.3.4")
@@ -20,5 +20,5 @@ def recover_to_home(indy):
 
 if __name__ == "__main__":
     import os
-    from indy_utils.indy_program_maker import JsonProgramComponent
+    from common.indy_program_maker import JsonProgramComponent
     print("Run as module : python -m indy_lib.indy_lib_function")
